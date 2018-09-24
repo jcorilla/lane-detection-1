@@ -16,6 +16,7 @@ The Project: A straightforward Pipeline
 ---
 
 **Step 1:** Preprocessing the video/image: Reading the image in grayscale and applying a gaussian blur. This should make it easier to detect edges (we are not checking for color yet) and should hopefully filter out any noise which could lead to some false positive lane detection.
+
 <img src="test_images_output/gauss_blur.jpg" width="480" alt="Blurred Image" />
 
 **Step 2:** Canny Edge detection: Find the gradient of the image and use a user defined range to select which range of color changes to keep. (This step is important before applying a boundary filter since some lane marking will partially extend out of the soon to be defined area of interest)
